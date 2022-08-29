@@ -15,7 +15,7 @@ jobs:
         uses: Dr-A-Soni/badges-readme@main
         with:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          REPOSITORY: <Dr-A-Soni>/<Badges-Certificates> # optional, By default, it will automatically use the repository who's executing the workflow.
+          REPOSITORY: Dr-A-Soni/badges-readme # optional, By default, it will automatically use the repository who's executing the workflow.
           COMMIT_MESSAGE: "My commit message to update badges" # optional
           CREDLY_USER: <ami-soni.f526dd7b_credly> # optional, but default will use the same from github
           CREDLY_SORT: RECENT or POPULAR # optional, this is the two forms from credly sort, more popular or recent first, by default use RECENT
