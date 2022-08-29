@@ -1,0 +1,15 @@
+FROM python:latest
+
+WORKDIR /badges
+
+#install dependencies
+
+ADD requirements.txt  requirements.txt
+
+RUN pip install -r requirementx.txt
+
+#copy code
+
+COPY . .
+
+CMD python3 -m unittest discover -v -s tests
