@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  badge-readme:
+    build: .
+    container_name: dev-badge-readme
+    image: dev-badge-readme
+    env_file:
+     - .env
+    volumes:
+      - ./main.py:/main.py
+      - ./settings.py:/settings.py
+      - ./services:/services

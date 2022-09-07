@@ -1,0 +1,13 @@
+FROM python:Latest
+
+#install dependencies
+
+ADD requirements.txt /requirements.txt
+
+RUN pip install -r requirements.txt
+
+#copy code
+
+COPY . .
+
+CMD python /main.py
