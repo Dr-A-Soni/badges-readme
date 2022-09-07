@@ -1,4 +1,4 @@
-name: "Badges - Readme"
+name: "badges-readme"
 author: Dr-A-Soni
 description: "Add a badges in your Readme"
 
@@ -45,3 +45,4 @@ runs:
 branding:
   icon: "info"
   color: "blue"
+
