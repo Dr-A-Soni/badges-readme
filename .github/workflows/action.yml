@@ -1,0 +1,52 @@
+name: "Badges - Readme"
+author: Pedro Matias de Araujo
+description: "Add a badges in your Readme"
+
+inputs:
+  GH_TOKEN:
+    description: "GitHub access token with Repo scope"
+    required: true
+    default: ${{ github.token }}
+
+  REPOSITORY:
+    description: "Your GitHub repository"
+    default: ${{ github.repository }}
+    required: false
+
+  COMMIT_MESSAGE:
+    description: "Add a commit message of your choice"
+    default: "Updated README with new badges"
+    required: false
+
+  CREDLY_USER:
+    description: "User name used in Credly"
+    default: ${{ github.actor }}
+    required: false
+  
+  CREDLY_SORT:
+    description: "The sort type for return credly badges [RECENT/POPULAR]"
+    default: RECENT
+    required: false
+  
+  BADGE_SIZE:
+    description: "Defines the badge dimension."
+    default: "110"
+    required: false
+  
+  NUMBER_LAST_BADGES:
+    description: "the number of the last badges that need to show - (0 to not set limit)"
+    default: "0"
+    required: false
+  
+  GH_API_URL: 
+    description: "The GitHub URL, can changed for enterprise github"
+    default: https://api.github.com
+    required: false
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "info"
+  color: "blue"
