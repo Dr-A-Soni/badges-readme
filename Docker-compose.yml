@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  badge-readme:
+    build: .
+    container_name: stoic-bohr
+    image: docker/dev-environments-default:stable-1
+    env_file:
+     - .env
+    volumes:
+      - ./main.py:/main.py
+      - ./settings.py:/settings.py
+      - ./services:/services
