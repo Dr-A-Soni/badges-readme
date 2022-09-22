@@ -2,7 +2,7 @@ version: "3.7"
 services:
   badge-readme:
     build: .
-    container_name: stoic-bohr
+    container_name: recuring_babbage
     image: docker/dev-environments-default:stable-1
     env_file:
      - .env

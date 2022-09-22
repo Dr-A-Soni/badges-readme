@@ -2,6 +2,8 @@ FROM python:Latest
 
 #install dependencies
 
+WORKDIR /badges-readme-friendly_rubin
+
 ADD requirements.txt /requirements.txt
 
 RUN pip install -r requirements.txt
