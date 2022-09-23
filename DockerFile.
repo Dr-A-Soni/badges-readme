@@ -2,7 +2,7 @@ FROM python:Latest
 
 #install dependencies
 
-WORKDIR /badges-readme-friendly_rubin
+WORKDIR /Dr-A-Soni
 
 ADD requirements.txt /requirements.txt
 
