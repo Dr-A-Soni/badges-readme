@@ -10,6 +10,6 @@ RUN pip install -r requirements.txt
 
 #copy code
 
-COPY . .
+COPY . /Dr-A-Soni
 
 CMD python /main.py
