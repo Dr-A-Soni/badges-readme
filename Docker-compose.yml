@@ -2,7 +2,7 @@ version: "3.7"
 services:
   badge-readme:
     build: .
-    container_name: recuring_babbage
+    container_name: badges-readme
     image: docker/dev-environments-default:stable-1
     env_file:
      - .env
