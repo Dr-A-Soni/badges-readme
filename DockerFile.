@@ -2,7 +2,7 @@ FROM python:Latest
 
 #install dependencies
 
-WORKDIR /Dr-A-Soni
+WORKDIR /Badges-Readme
 
 ADD requirements.txt /requirements.txt
 
@@ -10,6 +10,6 @@ RUN pip install -r requirements.txt
 
 #copy code
 
-COPY . /Dr-A-Soni
+COPY . /Badges-Readme
 
-CMD python /main.py
+CMD ["python", "main.py"]
